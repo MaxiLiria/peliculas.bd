@@ -1,0 +1,19 @@
+<app-nav></app-nav>
+<div class="detail">
+<div class="card" >
+
+    <img class="movie-img" src="{{movies?.foto}}" alt="{{movies?.title}}" />
+    <h2 class="title">{{movies?.title}}</h2>
+    <h2>Genero</h2>
+    <p>{{movies?.genre}}</p>
+    <h2>Director</h2>
+    <p>{{movies?.director}}</p>
+    <h2>Año</h2>
+    <p>{{movies?.year}}</p>
+    
+</div>
+<div class="button">
+    <button (click)="deleteMovie()">Eliminar</button>
+    <button (click)="changeMovie(movies)">Editar</button>
+</div>
+</div>

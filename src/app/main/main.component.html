@@ -1,0 +1,13 @@
+<h2>Ciencia Ficcio</h2>
+<div class="ficcion">
+<div  *ngFor="let movie of movies">
+   <a routerLink="/movies/{{movie._id}}">
+      <img class="img" src="{{movie.foto}}" alt="{{movie.title}}"/>
+      </a>
+</div>
+</div>
+
+<app-animacion></app-animacion>
+<app-terror></app-terror>
+    
+

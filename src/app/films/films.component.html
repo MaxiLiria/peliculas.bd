@@ -1,0 +1,9 @@
+<app-nav></app-nav>
+<p>Todas las peliculas</p>
+<div class="movies">
+    <div class="movie" *ngFor="let movie of movies">
+        <a routerLink="/movies/{{movie._id}}">
+        <img src="{{movie.foto}}" alt="{{movie.title}}"/>
+        </a>
+    </div>
+</div>

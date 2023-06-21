@@ -1,0 +1,20 @@
+<app-nav></app-nav>
+<h3>Add New Movie</h3>
+<form [formGroup]="movieForm" (ngSubmit)="onSubmit()">
+  <input formControlName="title" placeholder="title" />
+  <input formControlName="director" placeholder="director" />
+  <input formControlName="year" placeholder="year" />
+  <input formControlName="genre" placeholder="genero" />
+  <input formControlName="foto" placeholder="foto" />
+  <button  type="submit" [disabled]="!movieForm.valid">Submit</button>
+</form>
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
