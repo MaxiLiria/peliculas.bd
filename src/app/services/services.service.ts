@@ -18,31 +18,31 @@ export class ServicesService {
 
   constructor(private http: HttpClient) { }
   getMovies(){
-    return this.http.get('http://localhost:3000/movies')
+    return this.http.get('https://bd-peliculas.vercel.app/movies')
   }
 
   getMoviesById(_id: string){
-    return this.http.get(`http://localhost:3000/movies/id/${_id}`)
+    return this.http.get(`https://bd-peliculas.vercel.app/movies/id/${_id}`)
   }
 
   getMoviesByGenre(genre: string){
-    return this.http.get(`http://localhost:3000/movies/genre/Ficcion`)
+    return this.http.get(`https://bd-peliculas.vercel.app/movies/genre/Ficcion`)
   }
 
   getMoviesByGenere(genre: string){
-    return this.http.get(`http://localhost:3000/movies/genre/Animacion`)
+    return this.http.get(`https://bd-peliculas.vercel.app/movies/genre/Animacion`)
   }
 
   getMoviesByGenero(genre: string){
-    return this.http.get(`http://localhost:3000/movies/genre/Terror`)
+    return this.http.get(`https://bd-peliculas.vercel.app/movies/genre/Terror`)
   }
 
   addMovie(movie: any) {
-    return this.http.post('http://localhost:3000/movies', movie);
+    return this.http.post('https://bd-peliculas.vercel.app/movies', movie);
   }
 
   deleteMovie(id: number) {
-    return this.http.delete(`http://localhost:3000/movies/${id}`);
+    return this.http.delete(`https://bd-peliculas.vercel.app/movies/${id}`);
   }
 
   changeMovie(movie: any) {
@@ -50,7 +50,7 @@ export class ServicesService {
   }
 
   putMovie(id: any, movie: any){
-    return this.http.put(`http://localhost:3000/movies/${id}`, movie)
+    return this.http.put(`https://bd-peliculas.vercel.app/movies/${id}`, movie)
   }
 
   
