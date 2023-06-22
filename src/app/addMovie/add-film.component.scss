@@ -2,7 +2,7 @@ h3{
     color: white;
     text-align: center;
     font-size: 43px;
-    margin-top: 15%;
+    margin-top: 2%;
     color: #8707ff;
 }
 form{
@@ -60,4 +60,11 @@ button {
    
    input:active {
     box-shadow: 2px 2px 15px #8707ff inset;
+   }
+
+   .form{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
    }

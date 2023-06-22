@@ -15,6 +15,7 @@ import { AnimacionComponent } from './main/animacion/animacion.component';
 import { TerrorComponent } from './main/terror/terror.component';
 import { AddFilmComponent } from './addMovie/add-film.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ModifyComponent } from './modify/modify.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HomeComponent,
     AnimacionComponent,
     TerrorComponent,
-    AddFilmComponent
+    AddFilmComponent,
+    ModifyComponent
   ],
   imports: [
     BrowserModule,

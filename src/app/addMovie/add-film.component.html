@@ -1,5 +1,6 @@
 <app-nav></app-nav>
 <h3>Add New Movie</h3>
+<div class="form">
 <form [formGroup]="movieForm" (ngSubmit)="onSubmit()">
   <input formControlName="title" placeholder="title" />
   <input formControlName="director" placeholder="director" />
@@ -9,7 +10,8 @@
   <button  type="submit" [disabled]="!movieForm.valid">Submit</button>
 </form>
 
-        
+<app-modify [movie]="newMovie"></app-modify>
+</div>       
         
         
         
