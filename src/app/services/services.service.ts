@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ServicesService {
+  private valorEstrellas: Map<string, number> = new Map<string, number>();
 
   public movieData = {
     title: "",
@@ -52,7 +53,13 @@ export class ServicesService {
   putMovie(id: any, movie: any){
     return this.http.put(`https://bd-peliculas.vercel.app/movies/${id}`, movie)
   }
+  guardarValorEstrellas(_id:any, valor: number) {
+    this.valorEstrellas.set(_id,valor);
+  }
 
+  obtenerValorEstrellas(_id:any): number {
+    return this.valorEstrellas.get(_id) || 0;
+  }
   
 }
 
