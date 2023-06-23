@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { UserI } from '../interfaces/model';
 
 
 @Injectable({
@@ -61,6 +62,16 @@ export class ServicesService {
     return this.valorEstrellas.get(_id) || 0;
   }
   
+  register(user: UserI){
+    return this.http.post(`https://bd-peliculas.vercel.app/users/register`, user)
+  }
+
+  login(user: UserI){
+    return this.http.post(`https://bd-peliculas.vercel.app/users/login`, user)
+  }
+
+  getToken(){
+    return localStorage.getItem('token')
+  }
+  
 }
-
-

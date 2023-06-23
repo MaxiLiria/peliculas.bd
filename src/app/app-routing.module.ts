@@ -4,6 +4,8 @@ import { FilmsComponent } from './films/films.component';
 import { FilmsDetailComponent } from './films-detail/films-detail.component';
 import { HomeComponent } from './home/home.component';
 import { AddFilmComponent } from './addMovie/add-film.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
 
 
 const routes: Routes = [
@@ -19,6 +21,12 @@ const routes: Routes = [
   },
   {
     path:'agregar', component: AddFilmComponent
+  },
+  {
+    path:'register', component: RegisterComponent
+  },
+  {
+    path:'login', component: LoginComponent
   }
 ];
 

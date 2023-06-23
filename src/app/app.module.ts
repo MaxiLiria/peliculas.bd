@@ -16,6 +16,8 @@ import { TerrorComponent } from './main/terror/terror.component';
 import { AddFilmComponent } from './addMovie/add-film.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ModifyComponent } from './modify/modify.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { ModifyComponent } from './modify/modify.component';
     AnimacionComponent,
     TerrorComponent,
     AddFilmComponent,
-    ModifyComponent
+    ModifyComponent,
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
